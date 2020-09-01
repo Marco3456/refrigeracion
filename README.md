@@ -1,2 +1,0 @@
-# refrigeracion
-escalas del bajio
