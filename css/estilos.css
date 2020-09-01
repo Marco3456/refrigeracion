@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.galeria{
+	font-family: 'open sans';
+}
+
+.galeria h1{
+	text-align: center;
+	margin: 20px 0 15px 0;
+	font-weight:300;
+}
+
+.linea{
+	border-top: 5px solid #0077c0;
+	margin-buttom: 40px;
+}
+
+.contenedor-imagenes{
+	display: flex;
+	width: 85%;
+	margin: auto;
+	justifity-content: space-around;
+	flex-wrap: wrap;
+	border radius: 3%;
+}
+
+.contenedor-imagenes .imagen{
+	width: 32%;
+	position: relative;
+	height: 250px;
+	margin-buttom:5px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75)
+}
+
+.imagen img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+//overlay funciona para poner elementos envima de otros
+.overlay{
+	position: absolute;
+	buttom: 0;
+	left: 0;
+	background: rgba(0, 118, 192, 0.781);
+	width: 100%;
+}
+
+@media screen and (max-width: 450px){
+	h1{
+		font-size: 22px;
+	}
+	.contenedor-imagenes{
+		width: 90%;
+	}
+	.contenedor-imagenes .imagen{
+		width:48%;	
+	}
+}
